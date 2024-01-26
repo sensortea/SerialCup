@@ -168,7 +168,7 @@ def query(dir, serial_number, range_start, range_end, processFunc):
                         continue
 
                     processFunc(line.strip())
-                    
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: serialcup.py <command> [options]")
@@ -229,7 +229,7 @@ Examples:
 
         query(base_dir, serial_number, range_start, range_end, printFunc)
     else:
-        print("Invalid command. Use 'list' or 'capture'.")
+        print("Invalid command. Use 'list', 'capture', or 'query'.")
 
 if __name__ == '__main__':
     main()
